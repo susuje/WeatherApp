@@ -95,3 +95,32 @@ export const BottomInfo = styled.div`
 export const FlexDiv = styled.div`
   display: flex;
 `
+
+export const LoadingDiv = styled.div`
+  height: 640px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+
+  .icon {
+    width: 200px;
+    height: 200px;
+    animation: spin 2s linear infinite;
+  }
+
+  p {
+    font-size: 32px;
+    margin-top: 10px;
+  }
+
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+`
